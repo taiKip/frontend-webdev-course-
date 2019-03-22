@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width:100%;
+}
+header{
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+}
+.controls>.field>.field-label{
+    background-color: #e89631;
+    color:white;
+    padding :5px 10px;
+    border-radius:0 3px 3px 0;
+}
+.controls>.field{
+    display:flex;
+    margin: 10px 20px;
+}
+.controls>.field>.field-input{
+    border:medium solid #e89631
+}
+ #currency-indicator{
+    background-color: #e89631;
+    color:white;
+    padding:5px 10px;
+    border-radius:0 10px 10px  0;
+}
+#isLoading{
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+    margin: 20px;
+}
+.controls input[type= submit]{
+    background-color:#e89631;
+    color:white;
+    border-radius: 3px;
+    padding: 0 20px;
+}
+.controls input[type= submit]:hover{
+    background-color:#a0a0a0;
+    cursor: pointer;
+}
+.controls input {
+    font-family: Georgia,serif;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding:0 5px;
+    height: 100%;
+}
+.controls select{
+    border:none;
+    outline:none;
+    height: 100%;
+}
+#currency-list{
+    list-style: none;
+    margin: 50px;
+}
+#currency-list>li{
+    padding:5px 10px;
+    overflow: hidden;
+}
+#currency-list>li>div:first-child{
+    float:left;
+}
+#currency-list>li>div:last-child{
+    float: right;;
+}
+#currency-list>li:nth-child(odd){
+    background-color:#e0e0e0;
+}
